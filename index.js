@@ -10,16 +10,16 @@ class PlayerHeroi {
 
     switch (this.type) {
       case 'mago':
-        ataque = 'usou magia';
+        ataque = 'magia';
         break;
       case 'guerreiro':
-        ataque = 'usou espada';
+        ataque = 'espada';
         break;
       case 'monge':
-        ataque = 'usou artes marciais';
+        ataque = 'artes marciais';
         break;
       case 'ninja':
-        ataque = 'usou shuriken';
+        ataque = 'shuriken';
         break;
       default:
         ataque = 'não possui ataque definido';
@@ -29,11 +29,22 @@ class PlayerHeroi {
   }
 }
 
-const playerHeroi1 = new PlayerHeroi('Franklin', 30, 'mago');
+const playerHeroi1 = new PlayerHeroi('Franklin', 30, 'guerreiro');
+
+const mago = new PlayerHeroi();
+mago.name = 'mago';
+mago.age = 'centenario';
+mago.type = 'mago';
+
+const monge = new PlayerHeroi();
+monge.name = 'Nome do Monge';
+monge.age = 'idade Budda';
+monge.type = 'monge';
+
 
 playerHeroi1.atacar();
-
-
+mago.atacar();
+monge.atacar();
 
 
 
